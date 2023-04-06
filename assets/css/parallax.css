@@ -1,0 +1,117 @@
+.parallax-image-1,
+.parallax-image-2,
+.parallax-image-3,
+.parallax-image-4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#textwhite {
+    color: white !important;
+}
+
+.parallax-image-1 {
+    background-size: cover;
+    background-image: url('../../assets/img/geckos_misc/ggbg.jpg');
+    min-height: 100vh;
+}
+
+.parallax-image-2 {
+    background-size: cover;
+    background-image: url('../../assets/img/geckos_misc/gecko_sketch.jpg');
+    min-height: 100vh;
+}
+
+.parallax-image-3 {
+    background-size: cover;
+    background-image: url('../../assets/img/geckos_misc/meeting.jpg');
+    min-height: 100vh;
+}
+
+.parallax-image-4 {
+    background-size: cover;
+    background-image: url('../../assets/img/geckos_bg/Picsart_23-03-29_10-49-22-006.jpg');
+    min-height: 100vh;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+#section1 {
+    height: auto;
+}
+
+.section-light {
+    /* background-color: #f4f4f4; */
+    /* color: #666; */
+}
+
+.btn {
+    border-radius: 30px 30px 30px 30px;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+@media (max-width: 568px) {
+    .parallax-image-1,
+    .parallax-image-2,
+    .parallax-image-3,
+    .parallax-image-4 {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 600px) {
+    .ptext {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section.section-light {
+        padding: 50px 30px;
+    }
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+button:hover {
+    cursor: pointer;
+}
