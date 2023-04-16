@@ -36,8 +36,13 @@ class StickyNavigation {
 		} 
 		else {
 			$('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
+
 		}
+
 	}
+
+
+
 	
 	findCurrentTabSelector(element) {
 		let newCurrentId;
