@@ -13,11 +13,11 @@
 }
 
 [data-aos][data-aos][data-aos-duration='100'], body[data-aos-duration='100'] [data-aos] {
-  transition-duration: .1s;
+  transition-duration: .3s;
 }
 
 [data-aos][data-aos][data-aos-delay='100'], body[data-aos-delay='100'] [data-aos] {
-  transition-delay: 0;
+  transition-delay: 1.5s;
 }
 
 [data-aos][data-aos][data-aos-delay='100'].aos-animate, body[data-aos-delay='100'] [data-aos].aos-animate {
