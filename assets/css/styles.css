@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .text-container {
+    font-size: 2rem;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .text {
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+  }
+  

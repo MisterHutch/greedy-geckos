@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: #fffaaa;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .text-container {
+    font-size: 2rem;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+
+  /* ... previous CSS ... */
+
+@keyframes colorChange {
+    0% { color: #fff; }
+    20% { color: #f00; }
+    40% { color: #0f0; }
+    60% { color: #00f; }
+    80% { color: #f0f; }
+    100% { color: #fff; }
+  }
+  
+  .text {
+    .text {
+        display: inline-block;
+        position: relative;
+        transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        transition: transform 1s ease;
+        animation: colorChange 5s linear infinite;
+    }
+  }
+  
