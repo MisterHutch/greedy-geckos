@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+
+<head>
+    <title>Getting Clients IP</title>
+</head>
 <html lang="en" style="
     --bs-primary: #84a98c;
     --bs-primary-rgb: 132, 169, 140;
@@ -22,8 +26,14 @@
     <link rel="stylesheet" href="assets/css/parallax.css" />
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
     <link rel="stylesheet" href="assets/css/misc.css" />
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="assets/css/blocks.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+    </script>
+
+
 </head>
 
 <body style="background: var(--bs-primary)" data-bs-spy="scroll" data-bs-target="#active_links">
@@ -368,6 +378,22 @@
     <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/Lightbox-Gallery.js"></script>
+
+    <script>
+        let apiKey = 'at_6rgbHWAX6HUvoccvDFFgO7RNjSmV8';
+        let date = new Date();
+        let time = date.getHours() + ':' + date.getMinutes();
+        let currentDate = date.getMonth() + '/' + date.getDay() + '/' + date.getFullYear();
+
+        $.getJSON('https://geo.ipify.org/api/v2/country,city,vpn?apiKey=' + apiKey, function (data) {
+            save(data.ip, data.location.city, data.location.country, time, currentDate)
+        });
+
+    </script>
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<script src="assets/js/firebaseConfig.js"></script>
+
 
 </html>
