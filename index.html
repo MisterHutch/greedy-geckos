@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="
+    --bs-primary: #84a98c;
+    --bs-primary-rgb: 132, 169, 140;
+    --bs-secondary: #354f52;
+    --bs-secondary-rgb: 53, 79, 82;
+    --bs-success: #52796f;
+    --bs-success-rgb: 82, 121, 111;
+    --bs-info: #cad2c5;
+    --bs-info-rgb: 202, 210, 197;
+  ">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Greedy Geckoz Animation</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Greedy Geckoz</title>
+    <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" />
+    <link rel="stylesheet" href="assets/css/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css" />
+    <link rel="stylesheet" href="assets/css/parallax.css" />
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
+    <link rel="stylesheet" href="assets/css/misc.css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/blocks.css" />
 </head>
 <body>
   <div class="text-container">
@@ -371,6 +390,22 @@
     <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/Lightbox-Gallery.js"></script>
+
+    <script>
+        let apiKey = 'at_6rgbHWAX6HUvoccvDFFgO7RNjSmV8';
+        let date = new Date();
+        let time = date.getHours() + ':' + date.getMinutes();
+        let currentDate = date.getMonth() + '/' + date.getDay() + '/' + date.getFullYear();
+
+        $.getJSON('https://geo.ipify.org/api/v2/country,city,vpn?apiKey=' + apiKey, function (data) {
+            save(data.ip, data.location.city, data.location.country, time, currentDate)
+        });
+
+    </script>
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<script src="assets/js/firebaseConfig.js"></script>
+
 
 </html>
