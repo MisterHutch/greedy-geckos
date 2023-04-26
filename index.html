@@ -383,10 +383,9 @@
         let apiKey = 'at_6rgbHWAX6HUvoccvDFFgO7RNjSmV8';
         let date = new Date();
         let time = date.getHours() + ':' + date.getMinutes();
-        let currentDate = date.getMonth() + '/' + date.getDay() + '/' + date.getFullYear();
 
         $.getJSON('https://geo.ipify.org/api/v2/country,city,vpn?apiKey=' + apiKey, function (data) {
-            save(data.ip, data.location.city, data.location.country, time, currentDate)
+            save(data.ip, data.location.city, data.location.country, time, date)
         });
 
     </script>
