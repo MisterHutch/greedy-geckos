@@ -29,7 +29,7 @@
     <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="assets/css/blocks.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
 
     </script>
 
@@ -380,12 +380,12 @@
     <script src="assets/js/Lightbox-Gallery.js"></script>
 
     <script>
-        let apiKey = 'at_6rgbHWAX6HUvoccvDFFgO7RNjSmV8';
-        let date = new Date();
-        let time = date.getHours() + ':' + date.getMinutes();
-
-        $.getJSON('https://geo.ipify.org/api/v2/country,city,vpn?apiKey=' + apiKey, function (data) {
-            save(data.ip, data.location.city, data.location.country, time, date)
+        let apiKey = '20e041f2dad322';
+        let datetime = new Date();
+        const id = Math.floor(Math.random() * 1000000);
+        $.getJSON('https://ipinfo.io/104.254.92.53/json?token=20e041f2dad322', function (data) {
+            save(id, data.city, data.country, datetime, data.ip, data.region);
+            console.log(data.ip);
         });
 
     </script>
