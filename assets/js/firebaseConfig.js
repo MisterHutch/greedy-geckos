@@ -16,13 +16,14 @@
         
         let database = firebase.database();
         
-        function save(ip, city, country, time, date) {
-            database.ref('country/' + country).set({
-                ip: ip,
+        function save(id, city, country, datetime, ip, region) {
+            database.ref('id/' + id).set({
+                id: id,
                 city: city,
                 country: country,
-                time: time,
-                date: date
+                datetime: datetime,
+                ip: ip,
+                region: region
 
             })
         }

@@ -120,14 +120,7 @@
                         is randomly generated using 57 unique traits.&nbsp;</p>
                     </div>
                 </div>
-                <div id="music-player">
-                    <audio id="audio-player" controls>
-                        <div style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 100%;">
-                            <iframe src="https://embed.tidal.com/tracks/3090118?layout=gridify" frameborder="1" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; min-height: 100%; margin: 0 auto;" type="audio/mpeg">
-                            </iframe>
-                        </div>
-                    </audio>
-                  </div>
+                <!-- STARTSUB <gallery> -->
                 <div class="py-4 py-xl-6 text-light container">
                     <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-x2-3" data-bss-baguettebox="">
                         <div class="col">
@@ -155,59 +148,10 @@
         </div>
     </div>
     <!-- END SECTION </BG1> -->
-    <!-- START <story> -->
-    <!-- 
-    <section class="section section-light p-0 mb-5" style="background: var(--bs-primary);border-right-style: none;">
-
-        <div class="container" id="about">
-            <div class="row mt-5">
-                <div class="col">
-                    <figure>
-                        <blockquote class="blockquote">
-                            <p class="fs-2 text-center text-white mb-0" style="font-family: Amaranth, sans-serif;">
-                                Greed,
-                                for lack of a better word, is good.</p>
-                        </blockquote>
-                        <figcaption class="blockquote-footer fs-6 text-center text-info">Gordon Gekko</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-6 m-auto" id="section1" style="border-style: none;border-right-style: none;"><img
-                        class="img-thumbnail" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="150"
-                        src="assets/img/geckos_misc/Picsart_23-03-21_20-12-12-951.jpg" width="593" height="641"
-                        style="padding: 0;padding-left: 5px;padding-top: 0;background: transparent;"
-                        alt="drinking geckos"></div>
-                <div class="col-xxl-6 offset-xxl-0" data-aos="fade-down-left" data-aos-delay="150"
-                    style="background: var(--bs-info);border-radius: 23px;">
-                    <h1 class="fs-1"
-                        style="font-family: Amaranth, sans-serif;font-size: 2em;margin-top: 5%;color: var(--bs-success);">
-                        The Greedy Geckos</h1>
-                    <hr>
-                    <p class="fw-semibold" style="font-family: 'Open Sans', sans-serif;color: var(--bs-secondary);">
-                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa massa
-                            ultricies. Mi bibendum neque egestas congue. Consectetur purus ut faucibus pulvinar
-                            elementum integer. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant
-                            morbi. Ut eu sem integer vitae. In nulla posuere sollicitudin aliquam ultrices sagittis
-                            orci. Et egestas quis ipsum suspendisse ultrices gravida dictum. Quis eleifend quam
-                            adipiscing vitae proin sagittis nisl rhoncus. Bibendum neque egestas congue quisque egestas
-                            diam in arcu. Dolor magna eget est lorem ipsum dolor sit amet. Duis at consectetur lorem
-                            donec massa sapien faucibus. Diam quis enim lobortis scelerisque fermentum dui faucibus in.
-                            Velit sed ullamcorper morbi tincidunt ornare massa eget. Bibendum neque egestas congue
-                            quisque egestas diam in arcu cursus. Interdum varius sit amet mattis vulputate enim nulla
-                            aliquet. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Tincidunt eget
-                            nullam non nisi est sit amet facilisis. Ipsum nunc aliquet bibendum enim. Magnis dis
-                            parturient montes nascetur ridiculus mus.</strong>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END </story> -->
     <!-- START <BG2> -->
     <!-- START Status -->
     <!-- ========== ENDSECTION  ========== -->
+
     <!-- START Team -->
     <div class="parallax-image-3">
         <div class="container mb-auto mt-5 mb-5 overlay-bg" style="font-weight: bold" id="team">
@@ -218,7 +162,7 @@
                     <p style="
                 font-family: 'Open Sans', sans-serif;
                 color: var(--bs-info);" class="m-1">
-                        Meet the team. </p>
+                        Meet the gang. </p>
                 </div>
                 <div class="container">
                     <section class="pb-5 pt-5 text-center text-secondary">
@@ -392,13 +336,11 @@
     <script src="assets/js/Lightbox-Gallery.js"></script>
 
     <script>
-        let apiKey = 'at_6rgbHWAX6HUvoccvDFFgO7RNjSmV8';
-        let date = new Date();
-        let time = date.getHours() + ':' + date.getMinutes();
-        let currentDate = date.getMonth() + '/' + date.getDay() + '/' + date.getFullYear();
-
-        $.getJSON('https://geo.ipify.org/api/v2/country,city,vpn?apiKey=' + apiKey, function (data) {
-            save(data.ip, data.location.city, data.location.country, time, currentDate)
+        let apiKey = '20e041f2dad322';
+        let datetime = new Date();
+        const id = Math.floor(Math.random() * 1000000);
+        $.getJSON('https://ipinfo.io/104.254.92.53/json?token=20e041f2dad322', function (data) {
+            save(id, data.city, data.country, datetime, data.ip, data.region);
         });
 
     </script>
