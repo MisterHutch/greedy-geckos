@@ -8,7 +8,7 @@
   animation: 
     typing 13.5s steps(75, end),
     blink-caret .75s step-end infinite;
-    color:white;
+    color:Green;
 }
 
 /* The typing effect */
@@ -20,11 +20,11 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: 50 % transparent; }
-  60% { border-color: blue; }
+  70% { border-color: Blue; }
 }
 }
 .typewriter figcaption {
-color:white; 
+color:Blue; 
 }
 .team-container {
   display: flex;
@@ -37,7 +37,7 @@ color:white;
 }
 
 .team-card {
-  box-shadow: 4px 8px 8px 0 rgba(0,0,0,5.2);
+  box-shadow: 4px 8px 8px 0 rgba(0,0,0,7.5);
   transition: 1s;
   width: 24%;
   margin: 1%;
