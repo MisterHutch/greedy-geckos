@@ -36,15 +36,15 @@ color:Blue;
   justify-content: center;
   margin: 2rem;
   max-width: 1200px;
-  padding: 5px;
+  padding: 3px;
 }
 
 .team-card {
-  box-shadow: 4px 8px 8px 0 rgba(0,0,0,7.5);
+  box-shadow: 4px 8px 12px 1 rgba(0,0,0,7.5);
   transition: 1s;
   width: 24%;
   margin: 1%;
-  padding: 20px;
+  padding: 16px;
   text-align: center;
 }
 
