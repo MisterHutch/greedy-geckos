@@ -22,18 +22,21 @@
   from, to { border-color: 50 % transparent; }
   70% { border-color: Blue; }
 }
+  @media screen and (max-width:500px){
+    object-size: contain
+  }
 }
 .typewriter figcaption {
 color:Blue; 
 }
 .team-container {
   display: flex;
-  textarea-rows: 3;
+  textarea-rows: 4;
   flex-wrap: wrap;
   justify-content: center;
   margin: 2rem;
   max-width: 1200px;
-  padding: 6px;
+  padding: 5px;
 }
 
 .team-card {
