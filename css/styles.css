@@ -6,6 +6,19 @@ body {
     background-color: #222;
     color: #fffaaa;
     font-family: 'Arial', sans-serif;
+    bs-primary: #20d147;
+    bs-primary-rgb: 132, 169, 140;
+    bs-secondary: #28c7d8;
+    bs-secondary-rgb: 53, 79, 82;
+    bs-success: #52796f;
+    bs-success-rgb: 82, 121, 111;
+    bs-info: #cad2c5;
+    bs-info-rgb: 202, 210, 197;
+    bs-warning: #f7b801;
+    bs-warning-rgb: 202, 210, 197;
+    bs-danger: #f7b801;
+    bs-danger-rgb: 202, 210, 197;
+    bs-light: #f7b801;
   }
   
   .text-container {
