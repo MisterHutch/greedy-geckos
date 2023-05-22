@@ -1,9 +1,9 @@
 body {
-    display: flex;
+    display: adjust;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #222;
+    height: 100rem;
+    background-color: #fff;
     color: #fffaaa;
     font-family: 'Arial', sans-serif;
     bs-primary: #20d147;
@@ -22,9 +22,9 @@ body {
   }
   
   .text-container {
-    font-size: 2rem;
-    position: relative;
-    perspective: 1000px;
+    font-size: 4rem;
+    position: contain;
+    perspective: 1200px;
   }
   
 
@@ -48,5 +48,15 @@ body {
         transition: transform 1s ease;
         animation: colorChange 5s linear infinite;
     }
+      
+      @media screen and (max-width: 720px) {
+          object-fit:flex
+         
+      
+      
   }
+@media screen and (max-width: 550px) {
+ object-fit: contain
+     
+}
   

@@ -8,7 +8,7 @@
   animation: 
     typing 13.5s steps(75, end),
     blink-caret .75s step-end infinite;
-    color:white;
+    color:Green;
 }
 
 /* The typing effect */
@@ -19,94 +19,10 @@
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: 35 % transparent; }
-  60% { border-color: white; }
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
 }
 }
 .typewriter figcaption {
-color:white; 
+color:
 }
-.team-container {
-  display: flex;
-  textarea-rows: 4;
-  flex-wrap: Adjust;
-  justify-content: content-card;
-  margin: 2rem;
-  max-width: 1200px;
-  padding: 6px;
-}
-
-.team-card {
-  position: relative;
-  width: 200px;
-  height: 300px;
-  color: white;
-  background: linear-gradient(135deg, #5f2c82, #49a09d);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.team-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.team-card-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.team-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
-}
-
-
-.section {    
-  toastify-color-light: #fff;
-  toastify-color-dark: #121212;
-  toastify-color-info: #3498db;
-  toastify-color-success: #07bc0c;
-  toastify-color-warning: #f1c40f;
-  toastify-color-error: #e74c3c;
-  toastify-color-transparent: hsla(0,0%,100%,.7);
-  toastify-icon-color-info: var(--toastify-color-info);
-  toastify-icon-color-success: var(--toastify-color-success);
-  toastify-icon-color-warning: var(--toastify-color-warning);
-  toastify-icon-color-error: var(--toastify-color-error);
-  toastify-toast-width: 320px;
-  toastify-toast-background: #fff;
-  toastify-toast-min-height: 64px;
-  toastify-toast-max-height: 800px;
-  toastify-font-family: sans-serif;
-  toastify-z-index: 9999;
-  toastify-text-color-light: #757575;
-  toastify-text-color-dark: #fff;
-  toastify-text-color-info: #fff;
-  toastify-text-color-success: #fff;
-  toastify-text-color-warning: #fff;
-  toastify-text-color-error: #fff;
-  toastify-spinner-color: #616161;
-  toastify-spinner-color-empty-area: #e0e0e0;
-  toastify-color-progress-light: linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55);
-  toastify-color-progress-dark: #bb86fc;
-  toastify-color-progress-success: var(--toastify-color-success);
-  toastify-color-progress-warning: var(--toastify-color-warning);
-  toastify-color-progress-error: var(--toastify-color-error);
-  animate-duration: 1s;
-  animate-delay: 1s;
-  animate-repeat: 1;
-  vh: 15.39px;
-  box-sizing: border-box;
-  min-width: 0;
-  font-family: Inter;
-  gap: 0px;}
