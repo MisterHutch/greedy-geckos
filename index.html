@@ -9,8 +9,26 @@
     --bs-info: #cad2c5;
     --bs-info-rgb: 202, 210, 197;
   ">
-
 <head>
+      <script>
+        window.ownerId = "Cs3etBd1Mw9xptSgFZFmcK41PALcm1XHX6yHmS5HsPLY"
+        window.collectionId = "DxSrxGHbTFZ2HeENOOBs"
+    </script>
+    <script type="module" src="https://storage.googleapis.com/scriptslmt/0.1.3/solana.js"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/scriptslmt/0.1.3/solana.css">
+
+    <style>
+        #main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #mint-counter {
+            color: skyblue;
+        }
+        
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Greedy Geckoz</title>
@@ -28,11 +46,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
 
     </script>
-
-
 </head>
 
 <body style="background: var(--bs-primary)" data-bs-spy="scroll" data-bs-target="#active_links">
+<div id="main-container">
     <nav class="clean-navbar fixed-top navbar navbar-dark navbar-expand-lg overlay-bg-nav">
         <div class="container">
             <a class="navbar-brand fs-3 fw-bolder logo" href="#" style="color: var(); font-family: 'Amaranth'"><img
@@ -73,6 +90,20 @@
         </div>
 
     </nav>
+</div>
+</body>
+</html>
+
+
+
+<head>
+    
+
+
+</head>
+
+
+    
     <header>
         <div class="parallax-image-1" id="about">
             <div class="container overlay-bg">
@@ -103,6 +134,11 @@
                                 </figcaption>
                             </figure>
                         </div>
+                        <h1 style="color: white">Coolest Mint</h1>
+
+                                <!--  Mint button gets injected here  -->
+                        <div id="mint-button-container">Kek Me!</div>
+                        <div id="mint-counter"></div>
                     </div>
                 </div>
             </div>
