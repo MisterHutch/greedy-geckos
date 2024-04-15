@@ -161,7 +161,7 @@
     <!-- Remove baguetteBox.min.css, it's not needed and bloat the page -->
 </head>
 
-<body style="background: var(--bs-primary)" data-bs-spy="scroll" data-bs-target="#active_links">
+<body style="background: var(--bs-primary)" data-bs-spy="scroll" onmouseover="#active_links">
 <div id="main-container">
     <nav class="clean-navbar fixed-top navbar navbar-dark navbar-expand-lg overlay-bg-nav">
         <div class="container">
@@ -203,7 +203,6 @@
                 </ul>
             </div>
         </div>
-
     </nav>
 </div>
 </body>
@@ -218,25 +217,26 @@
 </head>
 
 
-<style>
-    .overlay-bg {
-        background: rgba(0, 0, 0, 0.5);
-    }
+    <style>
+        .overlay-bg {
+            background: rgba(4, 61, 12, 0.5);
+        }
     
-    .intro {
-        background: transparent;
-    }
+         .intro {
+             background: transparent, opacity(0.5);
+        }
     
-    .image {
-        border-radius: 50%;
-    }
-</style>
+         .image {
+            border-radius: 50%, shadow-lg, dark, border-bottom; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+    
+    </style>
     <header>
         <div class="parallax-image-1" id="about">
             <div class="container overlay-bg">
                 <div class="row">
                     <Section className="intro col-xxl-6 offset-xxl-0 text-center text-green p-5" class="col-xxl-6 offset-xxl-0">
-                        <img src="assets\img\geckos_misc\bw_logo.jpg" class="image" width="100% opacity="20%" />
+                        <img src="assets\img\geckos_misc\bw_logo.jpg" class="image" width="100%" opacity="20%" />
                     </Section>
             <div class="col"> <!-- refactored div -->
                         <h1 class="text-info mt-5">Greedy Geckoz</h1><br />
@@ -280,21 +280,19 @@
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
                     <h1 class="display-2 text-info" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 50px; padding: 10px">
                         Sneak Peeks </h1>
-                    <p style="
-                font-family: 'Open Sans', sans-serif;
-                color: var(--bs-info);
-                font-weight: bold;
-              ">
+          
                         Each Gecko is randomly generated using 57 unique traits.&nbsp; </p>
-                </div>
-            </div>
-            <div class="py-4 py-xl-5 text-info container">
+                    </div>
                 <div class="" data-bss-baguettebox="">
-                    <div class="col" style="text-align: center; text-shadow: brown; font-family: 'Open Sans', sans-serif; text-shadow:;">
+                    ">
+                        font-weight: bold;
+                        color: var(--bs-info);
+                        font-family: 'Open Sans', sans-serif;
+                    <p style="
+                    <div class="col" style="text-align: center; text-shadow: rgb(254, 16, 16); font-family: 'Open Sans', sans-serif; text-shadow:;">
                         <!-- AUCTION CAROUSEL -->
                         <!-- Image carousel with thumbnails -->
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="display: inline-flexbox; 
-                        background-color: white; slide text-shadow: brown; font-family: 'Open Sans', sans-serif; opacity: 5;overflow-wrap: var(--bs-info);">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"> 
                             <div class="carousel-inner" style="text-align: center;">
                               <div class="carousel-item active">
                               
@@ -556,7 +554,7 @@
                     }
                     alert('Congratulations, you have minted a Greedy Gecko!');
                 })();">Mint Now</button>
-            </p>
+                    <p class="text-info"></p>
                     <table class="table table-dark border 10px shadow-lg left-
                     padding 20px  margin 10px table-bordered mx-auto">
                         <thead>
@@ -577,6 +575,15 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div align='center'>
+                        <a href='https://www.free-website-hit-counter.com'>
+                            <img src='https://www.free-website-hit-counter.com/c.php?d=9&id=166246&s=50' border='0' alt='Free Website Hit Counter'>
+                        </a>
+                        <br / >
+                            <small><a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">Free website hit counter</a>
+                            </small>
+                    </div>
+
                 </div>
 
             </div>
@@ -619,14 +626,14 @@
         $.getJSON('https://ipinfo.io/104.254.92.53/json?token=20e041f2dad322', function (data) {
         });
         $.getJSON('https://ipinfo.io/?token=' + apiKey, function(data) {
-    <script>
+    </script>
          });
              save(id, data.city, data.country, datetime, data.ip, data.region);
         const id = Math.floor(Math.random() * 1000000);
         let apiKey = '20e041f2dad322';
         $.getJSON('https://ipinfo.io/json?token=' + apiKey, function(data) {
-            save(id, data.city, data.country, datetime, data.ip, data.region);
-        });
+    </script>
+            save(id, data.city, data.country, datetime, data.ip, data.region)});
     </script>
     
     </html>
