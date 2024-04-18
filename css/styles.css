@@ -47,9 +47,10 @@ body {
         transform-style: preserve-3d;
         transition: transform 1s ease;
         animation: colorChange 5s linear infinite;
+        color: #ffffff;
     }
       
-      @media screen and (max-width: 720px) {
+      @media screen and (max-width: 1440px) {
           object-fit:flex
          
       
@@ -85,7 +86,7 @@ body {
   }
   
   .team-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 2px 8px 16px 0 rgba(0,0,4);
   }
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
 
@@ -96,9 +97,11 @@ $btn-half: $btn-full/2 !default;
 $bg-color: #eeeeee !default;
 
 html {
-  padding-top: 50px;
+  padding-top: 30px;
   font-family: 'Open Sans', Helvetica, arial, sans-serif;
   text-align: center;
+  padding: 5px;
+  margin: 5px;
   background-color: $bg-color;
 
   *,
@@ -108,11 +111,6 @@ html {
     transition: 0.5s ease-in-out;
   }
 
-  i,em,
-  b,strong,
-  span {
-    transition: none;
-  }
 }
 
 *:before,

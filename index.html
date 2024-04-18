@@ -10,9 +10,7 @@
     --bs-info-rgb: 202, 210, 197;
   ">
 <head>
-        window.ownerId = "Cs3etBd1Mw9xptSgFZFmcK41PALcm1XHX6yHmS5HsPLY"
-        window.collectionId = "DxSrxGHbTFZ2HeENOOBs"
- 
+        
     <script type="module" src="https://storage.googleapis.com/scriptslmt/0.1.3/solana.js"></script>;
     <link rel="stylesheet" href="https://storage.googleapis.com/scriptslmt/0.1.3/solana.css">
    </script>
@@ -95,7 +93,9 @@
             const mintCounterValue = await fetch('/mint-counter').then(res => res.json());
             mintCounter.textContent = `Minted: ${mintCounterValue}`;
         };
+        </script>
 
+        <script type="module">
         async function save(id, city, country, datetime, ip, region) {
             await fetch('/save', {
                 method: 'POST',
@@ -207,6 +207,20 @@
 </div>
 </body>
 </html>
+// server.mjs
+import { createServer } from 'http';
+
+const server = createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello World!\n');
+});
+
+// starts a simple http server locally on port 3000
+server.listen(3000, '127.0.0.1', () => {
+  console.log('Listening on http://127.0.0.1:3000');
+});
+
+// run with `node server.mjs`
 
 
 
@@ -219,7 +233,7 @@
 
     <style>
         .overlay-bg {
-            background: rgba(4, 61, 12, 0.5);
+            background: rgba(86, 236, 106, 0.5);
         }
     
          .intro {
@@ -241,8 +255,7 @@
             <div class="col"> <!-- refactored div -->
                         <h1 class="text-info mt-5">Greedy Geckoz</h1><br />
                     
-                        <div class="typewriter
-                        <p class="text-info fs- alert-danger form-control-color ">
+                        <focus class="text-info" mx="auto" >
                             Once upon a time, there were some lazy geckos who spent most of their days drinking at the
                             local pub. But one day, they looked around and realized that they were going nowhere in
                             life. They saw their peers achieving success and making something of themselves, while they
@@ -250,18 +263,18 @@
                             They decided to put their laziness to good use and create a group dedicated to the pursuit
                             of wealth. They called themselves the Greedy Geckoz, with a motto of "Greed is Good." But
                             they weren't just in it for themselves. They believed that by working together and sharing
-                            their knowledge, they could all benefit from the collective wealth they would generate. </p>
+                            their knowledge, they could all benefit from the collective wealth they would generate. </focus>
                         <br />
                         <div class="typewriter">
-                            <figure>
-                                <blockquote class="blockquote mx-auto">
+                            <section>
+                                <blockquote class="blockquote mx-lg-1">
                                     <p class="mx-auto text-info">
-                                        Greed, for lack of a better word, is good. </p>
+                                        Greed, for lack of a better word, is good. </section>
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
                                     <span class="text-info">Gordon Gekko</span>
                                 </figcaption>
-                            </figure>
+                            </>
                         </div>
                         <h1 style="color: white"></h1>
 
@@ -274,70 +287,96 @@
         </div>
         <!-- START <BG1> -->
     </header>
-    <div class="parallax-image-2">
+    <div class="parallax-image-2" id="geckos" style="background: transparent, opacity(0.5);" >
         <div class="container mb-auto mt-5 overlay-bg" id="peeks">
             <div class="row" style="background: var(--bs-success); border-width: 0px;">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h1 class="display-2 text-info" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 50px; padding: 10px">
+                    <h1 class="display-2 text-info" style="font-family:'Franklin Gothic Medium' text=black ">
                         Sneak Peeks </h1>
-          
-                        Each Gecko is randomly generated using 57 unique traits.&nbsp; </p>
-                    </div>
-                <div class="" data-bss-baguettebox="">
-                    ">
-                        font-weight: bold;
-                        color: var(--bs-info);
-                        font-family: 'Open Sans', sans-serif;
-                    <p style="
-                    <div class="col" style="text-align: center; text-shadow: rgb(254, 16, 16); font-family: 'Open Sans', sans-serif; text-shadow:;">
-                        <!-- AUCTION CAROUSEL -->
-                        <!-- Image carousel with thumbnails -->
-                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"> 
-                            <div class="carousel-inner" style="text-align: center;">
-                              <div class="carousel-item active">
-                              
-                              </div>
-                                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 4"></button>
-                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 5"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active" data-bs-interval="100">
-                                    <img src="C:\Users\iuhut\OneDrive\Documents\GitHub\greedy-geckos\greedy-geckos\assets\img\geckos_misc\Sharky - Copy.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5 class="text-info">Sharky</h5>
-                                      <p>Gaws</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item" data-bs-interval="100">
-                                    <img src="C:\Users\iuhut\OneDrive\Documents\GitHub\greedy-geckos\greedy-geckos\assets\img\geckos_misc\spaceman.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>Spaceman</h5>
-                                      <p>aka Neal Geckostrong</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src=".\assets\img\geckos_misc\dino.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>Baby Dino</h5>
-                                      <p>Buuurp</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item" data-bs-interval="100">
-                                    <img src="C:\Users\iuhut\OneDrive\Documents\GitHub\greedy-geckos\greedy-geckos\assets\img\geckos_misc\spaceman.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>Spaceman</h5>
-                                      <p>aka Neal Geckostrong</p>
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
+                               <p class="text-info fs- alert-danger text-color black:#ffffff">Each Gecko is randomly generated using a total of 57 hand drawn traits. </p> <br />
+                           </>
+                       </div>
+            <       /div>
+            <div class="row">
+            <       !-- AUCTION CAROUSEL -->
+            <       !-- Image carousel with thumbnails -->
+            <       div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"> 
+                                   <div class="carousel-inner" style="text-align: center;">
+                                     <div class="carousel-item active">
+                                    
+                                    
+                                     <div class="carousel-item" data-bs-interval="1000" data-bs-target="#carouselExampleDark" action data-bs-slide-to="1" >
+                                       <img src="assets\img\geckos_misc\gecko1.png" class="d-block w-100" alt="...">
+                                     </div>
+                                     <div class="carousel-item" data-bs-interval="1000" data-bs-target="#carouselExampleDark" action data-bs-slide-to="2" >
+                                       <img src="assets\img\geckos_misc\gecko2.png" class="d-block w-100" alt="...">
+                                     </div>
+                                     <div class="carousel-item" data-bs-interval="1000" data-bs-target="#carouselExampleDark" action data-bs-slide-to="3">
+                                       <img src="assets\img\geckos_misc\gecko3.png" class="d-block w-100" alt="...">
+                                     </div>
+                                     <div class="carousel-item" data-bs-interval="1000" data-bs-target="#carouselExampleDark" action data-bs-slide-to="4">
+                                       <img src="assets\img\geckos_misc\gecko4.png" class="d-block w-100" alt="...">
+                                     </div>
+                                     <div class="carousel-item" data-bs-interval="1000" data-bs-target="#carouselExampleDark" action data-bs-slide-to="5" scroll="no">
+                                       <img src="assets\img\geckos_misc\gecko5.png" class="d-block w-100" alt="...">
+                                     </div>
+                                     <div class="carousel-item">
+                                       <img src="assets\img\geckos_misc\gecko6.png" class="d-block w-100" alt="...">
+                                     </div>
+                                       <img src="C:\Users\iuhut\OneDrive\Documents\GitHub\greedy-geckos\greedy-geckos\assets\img\geckos_misc\Sharky - Copy.jpg" class="d-block w-100" alt="Sharky">
+                                     </div>
+                                     <div class="carousel-item">  <img src="C:\Users\iuhut\OneDrive\Documents\GitHub\greedy-geckos\greedy-geckos\assets\img\geckos_misc\spaceman.jpg" class="d-block w-100" alt="Spaceman Geckos">    
+                                     </div>
+                                     <div class="carousel-item">
+                                       <img src="assets\img\geckos_misc\gecko3.png" class="d-block w-100" alt="...">
+                                     </div>
+                                     <div class="carousel-item">
+                                       <img src="assets\img\geckos_misc\gecko4.png" class="d-block w-100" alt="...">
+                                     </div>
+                                     <div class="carousel-item">
+                                       <img src="assets\img\geckos_misc\gecko5.png" class="d-block w-100" alt="...">
+                                     </div>
+                                     <div class="carousel-item">
+                                       <img src="assets\img\geckos_misc\gecko6.png" class="d-block w-100" alt="...">
+                                     </div>
+                                 
+
+                                 
+                                   <div class="carousel-inner">
+                                       <div class="carousel-item active" data-bs-interval="100">
+                                           <img src="C:\Users\iuhut\OneDrive\Documents\GitHub\greedy-geckos\greedy-geckos\assets\img\geckos_misc\Sharky - Copy.jpg" class="d-block w-100" alt="Sharky">
+                                           <div class="carousel-caption d-none d-md-block">
+                                             <h5 class="text-info">Sharky</h5>
+                                             <p>Gaws</p>
+                                           </div>
+                                       </div>
+                                       <div class="carousel-item" data-bs-interval="100">
+                                           <img src="C:\Users\iuhut\OneDrive\Documents\GitHub\greedy-geckos\greedy-geckos\assets\img\geckos_misc\spaceman.jpg" class="d-block w-100" alt="Spaceman Geckos">    
+                                           <div class="carousel-caption d-none d-md-block">
+                                             <h5>Spaceman</h5>
+                                             <p>aka Neal Geckostrong</p>
+                                           </div>
+                                       </div>
+                                       <div class="carousel-item">
+                                           <img src=".\assets\img\geckos_misc\dino.jpg" class="d-block w-100" alt="Mister Dino Gecko">
+                                           <div class="carousel-caption d-none d-md-block">
+                                             <h5>Baby Dino</h5>
+                                             <p>Buuurp</p>
+                                           </div>
+                                       </div>
+                                       <div class="carousel-item" data-bs-interval="100">
+                                           <img src="C:\Users\iuhut\OneDrive\Documents\GitHub\greedy-geckos\greedy-geckos\assets\img\geckos_misc\spaceman.jpg"
+                                               class="d-block w-100" alt="...">
+                                           <div class="carousel-caption d-none d-md-block">
+                                               <h5>Spaceman</h5>
+                                               <p>aka Neal Geckostrong</p>
+                                           </div>
+                                       </div>
+                                     </div>
+                                 </div>
+                               </div>
+                           </p>
+            </div>
             </div>
         </div>
     </div>
